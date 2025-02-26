@@ -22,7 +22,8 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('addBike/',bikeView,name='bike')
+    path('addBike/',addBikeView,name='bike'),
+    path('showbike/',ShowBike,name='show'),
 ]
 
 if settings.DEBUG:
